@@ -1,7 +1,7 @@
 {
   "name": "expo-conic-gradient",
   "version": "0.1.0",
-  "description": "Conic/Angular/Sweep gradient view",
+  "description": "conic/angular/sweep gradient view",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
@@ -19,7 +19,13 @@
     "react-native",
     "expo",
     "expo-conic-gradient",
-    "ConicGradient"
+    "ConicGradient",
+    "AngularGradient",
+    "SweepGradient",
+    "conic",
+    "angular",
+    "sweep",
+    "gradient"
   ],
   "repository": "https://github.com/jakex7/expo-conic-gradient.git",
   "bugs": {
