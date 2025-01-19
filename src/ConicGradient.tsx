@@ -1,22 +1,26 @@
 import { Component, ReactNode } from "react";
 import { processColor, ViewProps } from "react-native";
 
-import { CenterPoint } from "./NativeConicGradient.types";
+import {
+  CenterPoint,
+  NativeConicGradientViewProps,
+} from "./NativeConicGradient.types";
 import NativeConicGradientView from "./NativeConicGradientView";
 
-type ConicGradientProps = ViewProps & {
-  colors: readonly [string, string, ...string[]];
-  center?: CenterPoint;
-  angle?: number;
-};
+type ConicGradientProps = ViewProps &
+  Omit<NativeConicGradientViewProps, "colors"> & {
+    colors: [string, string, ...string[]];
+    center?: CenterPoint;
+  };
 
 export default class ConicGradient extends Component<ConicGradientProps> {
   render(): ReactNode {
-    const { colors, center, angle, ...props } = this.props;
+    const { colors, locations, center, angle, ...props } = this.props;
     return (
       <NativeConicGradientView
         {...props}
-        colors={colors.map(processColor) as readonly number[]}
+        colors={colors.map(processColor) as number[]}
+        locations={locations}
         center={center}
         angle={angle}
       />
