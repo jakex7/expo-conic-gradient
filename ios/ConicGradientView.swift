@@ -1,15 +1,12 @@
 import ExpoModulesCore
 import SwiftUI
 
+// Based on https://github.com/expo/expo/tree/main/packages/expo-mesh-gradient
 struct ConicGradientView: ExpoSwiftUI.View {
     @EnvironmentObject var props: ConicGradientProps
     
     var body: some View {
-        ZStack(alignment: .topLeading) {
-            AnyView(
-                AngularGradient(stops: createStops(), center: props.center, angle: Angle(degrees: props.angle - 90))
-            )
-        }
+        AngularGradient(stops: createStops(), center: props.center, angle: Angle(degrees: props.angle - 90))
     }
     
     private func createStops() -> [Gradient.Stop] {
