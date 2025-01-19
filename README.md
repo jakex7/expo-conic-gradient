@@ -26,4 +26,4 @@ yarn add expo-conic-gradient
 See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
 
 
-### Built with ♥️ by Jakub Grzywacz
+### Made with ♥️ by Jakub Grzywacz
