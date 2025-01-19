@@ -12,12 +12,17 @@ import expo.modules.kotlin.views.ExpoView
 
 class ConicGradientView(context: Context, appContext: AppContext) : ExpoView(context, appContext) {
   private var mCenter = floatArrayOf(0.5f, 0.5f)
+  private var mLocations: FloatArray? = null
   private var mColors: IntArray = intArrayOf(Color.TRANSPARENT, Color.TRANSPARENT)
   private var mAngle: Float = 0f
   private var paint = Paint(Paint.ANTI_ALIAS_FLAG)
 
   fun setColors(colors: IntArray) {
     mColors = colors
+  }
+
+  fun setLocations(locations: FloatArray) {
+    mLocations = locations
   }
 
   fun setCenter(center: FloatArray) {
@@ -33,7 +38,7 @@ class ConicGradientView(context: Context, appContext: AppContext) : ExpoView(con
       width * mCenter[0],
       height * mCenter[1],
       mColors,
-      null
+      mLocations
     )
     sweepGradient.transform {
       setRotate(

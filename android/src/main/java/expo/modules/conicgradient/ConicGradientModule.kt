@@ -13,6 +13,10 @@ class ConicGradientModule : Module() {
         view.setColors(colors)
       }
 
+      Prop("locations") { view: ConicGradientView, locations: FloatArray ->
+        view.setLocations(locations)
+      }
+
       Prop("center") { view: ConicGradientView, center: FloatArray ->
         view.setCenter(center)
       }
