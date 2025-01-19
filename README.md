@@ -1,9 +1,6 @@
 # expo-conic-gradient
 
-> [!WARNING]  
-> This library is still in the experimental stage and is not yet ready for production use.
-
-![Cover image](example/assets/example.jpeg)
+![Cover image](example/assets/cover.png)
 
 ## 🪄 Installation
 
@@ -11,19 +8,23 @@
 yarn add expo-conic-gradient
 ```
 
-<!-- ## 📖 Usage
+## 📖 Usage
 
+```tsx
+import { ConicGradientView } from "expo-conic-gradient";
 
-## 🛠️ Troubleshooting -->
+export default () => {
+  return (
+      <ConicGradientView
+        colors={["red", "orange", "yellow", "green", "blue"]}
+      />
+  );
+};
+```
 
 
 ## ⚖️ License
 
 **[MIT](/LICENSE)**
-
-## 📝 Contribute
-
-See the [contributing guide](CONTRIBUTING.md) to learn how to contribute to the repository and the development workflow.
-
 
 ### Made with ♥️ by Jakub Grzywacz
