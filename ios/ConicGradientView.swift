@@ -2,7 +2,7 @@ import ExpoModulesCore
 import SwiftUI
 
 struct ConicGradientView: ExpoSwiftUI.View {
-  @EnvironmentObject var props: ConicGradientProps
+    @EnvironmentObject var props: ConicGradientProps
     
     var body: some View {
         ZStack(alignment: .topLeading) {
