@@ -1,6 +1,6 @@
 {
   "name": "expo-conic-gradient",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "conic/angular/sweep gradient view",
   "main": "build/index.js",
   "types": "build/index.d.ts",
