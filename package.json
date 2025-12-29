@@ -36,10 +36,10 @@
   "homepage": "https://github.com/jakex7/expo-conic-gradient.git#readme",
   "dependencies": {},
   "devDependencies": {
-    "@types/react": "~19.0.10",
-    "expo": "^53.0.12",
+    "@types/react": "~19.1.10",
+    "expo": "^54.0.30",
     "expo-module-scripts": "^4.0.3",
-    "react-native": "0.79.4"
+    "react-native": "0.81.5"
   },
   "peerDependencies": {
     "expo": "*",
